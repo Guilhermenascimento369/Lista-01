@@ -1,0 +1,23 @@
+
+// Programa 01:
+
+int main(){
+  	int vet[] = {4,9,13};
+  	int i;
+  	for(i=0;i<3;i++){
+   	 printf("%d ",*(vet+i));
+  	}
+	}
+//Funcionamento:  Utilizando um loop, o programa ira percorrer o bloco de memoria do vetor declarado;. 
+
+// Programa 02:
+
+int main(){
+ 	 int vet[] = {4,9,13};
+  	int i;
+  	for(i=0;i<3;i++){
+  	  printf("%X ",vet+i);
+ 	 }
+	}
+
+//Funcionamento: O programa ira imprimir o endereco  de cada bloco, ao inves do conteudo.

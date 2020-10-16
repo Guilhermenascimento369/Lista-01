@@ -1,0 +1,7 @@
+ p = mat + 1;    // Válida;
+
+  p = mat++;  //Inválida, valor int ligado a um ponteiro;
+
+p = ++mat;    //Inválida,valor int ligado a um ponteiro;
+
+x = (*mat)++;   // Válida.

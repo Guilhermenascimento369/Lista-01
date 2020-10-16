@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+int i,j;
+int 
+p = i; //ILEGAL: falta operador de endereço
+q = &j; //LEGAL
+p = &*&i;//LEGAL
+i = (*&)j;//LEGAL
+i = *&j;//LEGAL
+i = *&*&j;//LEGAL
+q = *p; // ILEGAL
+i = (*p)++ + *q; // LEGAL
+
+  return 0;
+}

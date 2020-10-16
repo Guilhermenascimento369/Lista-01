@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int i=3,j=5;
+    int *p, *q, *h, valor;
+    int pp, pq;
+
+//retorna valor de cada variavel
+    p = &i; 
+    q = &j;
+
+    pp =*p;
+    pq =*q;
+
+    printf("i = %d \n", i);
+    printf("p-q = %d \n", *p - *q); 
+    printf("p = %d \n", **&p);
+  valor = 3 - pp/pq + 7;
+    printf("valor = %d \n", valor);
+  
+    return 0;
+}
+ //resultado i = 3 
+//p-q = -2 
+//p = 3 
+//valor = 10
